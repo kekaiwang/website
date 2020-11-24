@@ -12,13 +12,13 @@
   <li>编写简单的 “Hello, world" 代码。</li>
   <li>使用 <code>go</code> 命令执行你的代码。</li>
   <li>
-    使用 Go 包（Go Package）发现工具去查找可以在你自己代码中使用的包。
+    使用 Go 发现工具包去查找可以在你自己代码中使用的包。
   </li>
-  <li>调用外部模块提供的函数（function）。</li>
+  <li>调用外部模块的功能。</li>
 </ul>
 
 <aside class="Note">
-  <strong>提示:</strong> 想了解其他教程，请查看
+  <strong>提示:</strong> 其他教程, 查看
   <a href="index.html">教程</a>.
 </aside>
 
@@ -144,7 +144,7 @@ $ go help
 <h2 id="call">使用外部包的代码</h2>
 
 <p>
-  当你的代码需要引用其他代码的时候，你可以在其他的包中找到你想用在自己代码中的功能（function）。
+  当你当代码需要引用其他代码的时候，你可以查找其他包中包含你想要的功能。
 </p>
 
 <ol>
@@ -159,10 +159,10 @@ $ go help
       </li>
       <li>
         在搜索结果中找到并点击 <code>rsc.io/quote</code> 包（
-        当你看到  <code>rsc.io/quote/v3</code> 包时请暂时忽略）。
+        当你看到  <code>rsc.io/quote/v3</code> 包时请暂时忽略）。、
       </li>
       <li>
-        在左侧 <strong>Documentation(文档)</strong> 标签页面的 Index(索引) 下面的清单里列举的是你可以调用的功能（function）。你将使用的 <code>Go语言</code> 函数。
+        在 <strong>文档</strong> 标签，索引里面，注意列表里面是你可以调用的功能。你可以使用 <code>Go</code> 函数。
       </li>
       <li>
         在页面的顶部，注意 <code>quote</code> 包是包含在 <code>rsc.io/quote</code>  模块中的。
@@ -199,7 +199,7 @@ func main() {
     将你的代码放在模块中去跟踪依赖关系。
 
     <p>
-      当你的代码从另一个模块中引入包时，go.mod 文件会列出这些模块和使用的版本。这些文件和你的代码一起保存在你的源码库中。
+      当你的代码从另一个模块中引入包时，go.mod 文件会列出这些模块和使用的版本。这些文件在你的代码里面，在你的源代码里面。
     </p>
 
     <p>
@@ -207,7 +207,7 @@ func main() {
       <a
         href="https://golang.org/cmd/go/#hdr-Initialize_new_module_in_current_directory"
         ><code>go mod init</code> 命令</a
-      >, 给它提供代码所在模块的名称（这里只用了 "hello" ）:
+      >, 给它提供代码所在模块的里面（这里，只需要使用 "hello"）:
     </p>
 
     <pre>
@@ -218,7 +218,7 @@ go: creating new go.mod: module hello
   </li>
 
   <li>
-执行你的代码去查看你调用函数所产生的信息。
+    执行你的代码查看信息你调用的函数产生的消息。
     <pre>
 $ go run hello.go
 go: finding module for package rsc.io/quote
